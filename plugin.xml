@@ -37,11 +37,11 @@
     <js-module src="www/CompassHeading.js" name="CompassHeading">
         <clobbers target="CompassHeading" />
     </js-module>
-
-    <js-module src="www/compass.js" name="compass">
-        <clobbers target="navigator.compass" />
-    </js-module>
  -->
+    <js-module src="www/compassx.js" name="compassx">
+        <clobbers target="navigator.compassx" />
+    </js-module>
+
 
 
     <!-- ios -->
