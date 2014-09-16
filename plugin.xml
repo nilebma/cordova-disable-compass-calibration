@@ -20,7 +20,7 @@
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="org.apache.cordova.device-orientation"
+    id="com.hybyr.compassx"
     version="0.3.9-dev">
 
     <name>Cordova disable compass calibration</name>
@@ -35,8 +35,11 @@
         <clobbers target="CompassHeading" />
     </js-module>
  -->
+    <dependency id="org.apache.cordova.device-orientation" version=">=0.3.9-dev" />
+
+
     <js-module src="www/compassx.js" name="compassx">
-        <clobbers target="compassx" />
+        <clobbers target="window.compassx" />
     </js-module>
 
 
