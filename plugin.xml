@@ -26,7 +26,7 @@
     <name>Cordova disable compass calibration</name>
     <description>addon to cordova orientation plugin. This plugin simply disables compass calibration</description>
 
-<!-- 
+
     <js-module src="www/CompassError.js" name="CompassError">
         <clobbers target="CompassError" />
     </js-module>
@@ -34,7 +34,7 @@
     <js-module src="www/CompassHeading.js" name="CompassHeading">
         <clobbers target="CompassHeading" />
     </js-module>
- -->
+ 
     <dependency id="org.apache.cordova.device-orientation" version=">=0.3.9-dev" />
 
 
