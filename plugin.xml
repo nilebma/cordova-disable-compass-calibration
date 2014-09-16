@@ -35,8 +35,8 @@
         <clobbers target="CompassHeading" />
     </js-module>
  -->
-    <js-module src="www/compass.js" name="compass">
-        <clobbers target="navigator.compass" />
+    <js-module src="www/compassx.js" name="compassx">
+        <clobbers target="compassx" />
     </js-module>
 
 

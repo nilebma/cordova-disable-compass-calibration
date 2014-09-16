@@ -26,7 +26,7 @@ var argscheck = require('cordova/argscheck'),
     CompassError = require('./CompassError'),
 
     timers = {},
-    compass = {
+    compassx = {
         /**
          * Asynchronously acquires the current heading.
          * @param {Function} successCallback The function to call when the heading
@@ -36,7 +36,7 @@ var argscheck = require('cordova/argscheck'),
          * @param {CompassOptions} options The options for getting the heading data (not used).
          */
         getCurrentHeading:function(successCallback, errorCallback, options) {
-            argscheck.checkArgs('fFO', 'compass.getCurrentHeading', arguments);
+            argscheck.checkArgs('fFO', 'compassx.getCurrentHeading', arguments);
 
             var win = function(result) {
                 var ch = new CompassHeading(result.magneticHeading, result.trueHeading, result.headingAccuracy, result.timestamp);
@@ -62,7 +62,7 @@ var argscheck = require('cordova/argscheck'),
          * specifies to watch via a distance filter rather than time.
          */
         watchHeading:function(successCallback, errorCallback, options) {
-            argscheck.checkArgs('fFO', 'compass.watchHeading', arguments);
+            argscheck.checkArgs('fFO', 'compassx.watchHeading', arguments);
             // Default interval (100 msec)
             var frequency = (options !== undefined && options.frequency !== undefined) ? options.frequency : 100;
             var filter = (options !== undefined && options.filter !== undefined) ? options.filter : 0;
@@ -71,11 +71,11 @@ var argscheck = require('cordova/argscheck'),
             if (filter > 0) {
                 // is an iOS request for watch by filter, no timer needed
                 timers[id] = "iOS";
-                compass.getCurrentHeading(successCallback, errorCallback, options);
+                compassx.getCurrentHeading(successCallback, errorCallback, options);
             } else {
                 // Start watch timer to get headings
                 timers[id] = window.setInterval(function() {
-                    compass.getCurrentHeading(successCallback, errorCallback);
+                    compassx.getCurrentHeading(successCallback, errorCallback);
                 }, frequency);
             }
 
@@ -100,4 +100,4 @@ var argscheck = require('cordova/argscheck'),
         }
     };
 
-module.exports = compass;
+module.exports = compassx;
