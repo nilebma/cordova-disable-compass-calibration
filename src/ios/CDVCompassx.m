@@ -19,7 +19,7 @@
 
 #import "CDVCompassx.h"
 #import <Cordova/NSArray+Comparisons.h>
-
+#import <Cordova/CDVCompass.m>
 
 @implementation CDVCompass (CDVCompassx)
 

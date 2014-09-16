@@ -19,14 +19,14 @@
  *
 */
 
-var argscheck = require('cordova/argscheck'),
-    exec = require('cordova/exec'),
-    utils = require('cordova/utils'),
-    CompassHeading = require('./CompassHeading'),
-    CompassError = require('./CompassError'),
+var argscheck = require('cordova/argscheck');
+var    exec = require('cordova/exec');
+var    utils = require('cordova/utils');
+ //   CompassHeading = require('./CompassHeading'),
+ //   CompassError = require('./CompassError'),
 
-    timers = {},
-    compassx = {
+ var   timers = {};
+ var   compassx = {
         /**
          * Asynchronously acquires the current heading.
          * @param {Function} successCallback The function to call when the heading
