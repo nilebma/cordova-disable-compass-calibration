@@ -20,7 +20,7 @@
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
 #import <Cordova/CDVPlugin.h>
- #import <Cordova/CDVCompass.h>
+#import "CDVCompass.h"
 
 
 
