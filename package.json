@@ -1,0 +1,32 @@
+{
+    "name": "cordova-disable-compass-calibration-ios",
+    "version": "0.4.0",
+    "description": "Disable the compass calibration on iOS\n  ",
+    "cordova": {
+      "id": "",
+      "platforms": [
+        "ios"
+      ]
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/nilebma/cordova-disable-compass-calibration.git"
+    },
+    "keywords": [
+      "Compass",
+      "iOS Calibration"
+    ],
+    "engines": [
+      {
+        "name": "cordova",
+        "version": ">=3.0.0"
+      }
+    ],
+    "author": "Wikitude GmbH",
+    "license": "(c) 2016 - 2017 Wikitude GmbH - see License.md for details of the license",
+    "bugs": {
+      "url": "https://github.com/nilebma/cordova-disable-compass-calibration/issues"
+    },
+    "homepage": "https://github.com/nilebma/cordova-disable-compass-calibration"
+  }
+  
